@@ -1,0 +1,89 @@
+.tiffin-card {
+  text-decoration: none;
+  width: 15rem;
+  /* margin: 1.5rem 1rem; */
+}
+.tiffin-card img {
+  width: 100%;
+  height: 150px;
+}
+
+.tiffin-card a {
+  text-decoration: none;
+  color: black;
+}
+
+.tiffin-card a:hover {
+  color: black;
+}
+
+.tiffin-card h4 {
+  margin: 10px 0;
+}
+
+.favourite {
+  position: relative;
+  top: -2rem;
+  left: 6.5rem;
+}
+
+.tiffin-card p {
+  padding: 2px;
+  margin: 0;
+}
+
+.info {
+  text-align: left;
+}
+
+.rating {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-top: 3px;
+  background-color: #f9a322;
+  color: white;
+  border-radius: 60px;
+  max-width: 5rem;
+  min-width: 2.7rem;
+  max-height: 1.5rem;
+}
+
+.reviews {
+  display: flex;
+  margin-bottom: 0.5rem;
+}
+
+.reviews p {
+  font-weight: bold;
+}
+
+.price b {
+  font-size: 2rem;
+}
+
+.cuisine {
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0 0.5rem;
+  background-color: rgb(230, 153, 105);
+  color: white;
+  margin-right: 1rem;
+}
+.veg {
+  border-radius: 10px;
+  width: fit-content;
+  padding: 0 0.5rem;
+  color: white;
+}
+
+@media only screen and (max-width: 1270px) {
+  .price b {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 700px) {
+}

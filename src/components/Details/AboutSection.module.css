@@ -1,0 +1,138 @@
+h3 {
+  padding-bottom: 1rem;
+}
+
+.about-section {
+  padding: 3rem 5rem;
+  animation: appear 1s ease-out forwards;
+}
+
+.heading {
+  text-align: left;
+  border-bottom: 4px solid #f27059;
+  padding-bottom: 1rem;
+}
+
+.info {
+  display: flex;
+}
+
+.description {
+  text-align: left;
+  max-width: 43.3rem;
+  padding: 2rem 2rem 2rem 0;
+  border-right: 4px solid #f27059;
+}
+
+.description-text {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #f0e3d6;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.lists {
+  padding: 2rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list-item {
+  display: block;
+  clear: both;
+  counter-increment: list;
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+  position: relative;
+  transition: font-weight 2sec;
+}
+
+.list-item:before {
+  font: bold 2.25rem/1;
+  content: counter(list);
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  margin: 0 1.5rem 0.75rem 0;
+  color: #fdfdfd;
+  background: #f27059 linear-gradient(to bottom right, #f27059 25%, #ffedbc);
+  text-shadow: 0 0 2px #f27059;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  shape-outside: ellipse();
+  z-index: 1;
+}
+
+.list-item:after {
+  width: 1rem;
+  height: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: #f27059;
+  z-index: -1;
+  border-top-left-radius: 3px;
+}
+
+.list-item:hover {
+  color: #783d2f;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.lists h3 {
+  color: #f27059;
+}
+
+.amenities,
+.features {
+  text-align: left;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .about-section {
+    padding: 3rem 1rem;
+  }
+  .description {
+    padding-right: 0.5rem;
+  }
+  .lists {
+    padding: 0 0 0 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .about-section {
+    padding: 1rem;
+  }
+  .lists {
+    padding: 0;
+  }
+
+  .info {
+    flex-direction: column;
+  }
+
+  .description {
+    border-right: none;
+    padding: 0;
+  }
+}

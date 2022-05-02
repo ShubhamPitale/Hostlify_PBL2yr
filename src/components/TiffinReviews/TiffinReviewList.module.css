@@ -1,0 +1,14 @@
+.tiffin-reviews {
+  list-style: none;
+  margin: 2.5rem 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .tiffin-reviews {
+    grid-template-columns: auto;
+  }
+}

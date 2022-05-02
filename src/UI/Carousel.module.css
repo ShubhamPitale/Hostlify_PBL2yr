@@ -1,0 +1,50 @@
+.carousel {
+  margin-top: 3rem;
+  margin-left: 3rem;
+  padding-right: 2rem;
+  overflow: hidden;
+  width: 45%;
+}
+
+.inner {
+  white-space: nowrap;
+  transition: transform 0.7s;
+}
+
+.carousel-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  color: #fff;
+}
+
+.indicators {
+  display: flex;
+  justify-content: center;
+}
+
+.dot {
+  background-color: #f27059;
+  height: 3px;
+  width: 12px;
+  border-radius: 1.5px;
+}
+
+.indicators > button {
+  margin: 5px;
+}
+
+.indicators > button.active {
+  background-color: #dcc8c4;
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+}

@@ -1,0 +1,67 @@
+.form {
+  margin-top: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.stars button {
+  margin: 0.2rem;
+  border: none;
+  background-color: #f0e4d8;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.control {
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.control label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.control textarea {
+  font: inherit;
+  padding: 0.35rem;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  border: 1px solid #c1d1d1;
+  display: block;
+  width: 50rem;
+  font-size: 1.25rem;
+}
+
+.on {
+  color: #f25c54;
+}
+.off {
+  color: #ccc;
+}
+
+.control textarea:focus {
+  background-color: #cbf8f8;
+  outline-color: teal;
+}
+
+.actions button {
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .control textarea {
+    width: 100%;
+  }
+}

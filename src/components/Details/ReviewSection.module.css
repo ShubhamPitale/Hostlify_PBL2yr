@@ -1,0 +1,74 @@
+.review-section {
+  padding: 3rem 5rem;
+  background-color: #f0e4d8;
+}
+
+.heading {
+  text-align: left;
+  border-bottom: 4px solid #f27059;
+  padding-bottom: 1rem;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.card {
+  text-align: left;
+}
+
+.icon {
+  padding-right: 0.7rem;
+}
+
+.textarea {
+  min-height: 10rem;
+  padding: 0.8rem 1.3rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 1rem;
+  resize: none;
+}
+
+.textarea:focus {
+  border: 2px solid #f7b267;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.on {
+  color: #f25c54;
+}
+.off {
+  color: #ccc;
+}
+
+.add-review {
+  padding-top: 5rem;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 900px) {
+  .review-section {
+    padding: 3rem 0.5rem;
+  }
+  .reviews {
+    grid-template-columns: auto;
+  }
+
+  .textarea {
+    padding: 0.5rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: rgb(247, 157, 101);
+}
+.logo {
+  width: 5%;
+  height: 100%;
+  cursor: pointer;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+.items {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  justify-self: left;
+  /* margin-left: -40px; */
+}
+.logout {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.logout:hover {
+  text-decoration: underline;
+}
+.down {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 5px;
+}
+.item {
+  list-style-type: none;
+}
+.link {
+  text-decoration: none;
+  color: white;
+}
+.link:hover {
+  text-decoration: underline;
+}
+.option {
+  /* display: inline-block;
+  width: 100%; */
+  list-style: none;
+  margin-bottom: 8px;
+}
+.option:hover {
+  border-bottom: 2px solid white;
+}
+.optlink {
+  text-decoration: none;
+  color: #ececec;
+}
+.noclick {
+  cursor: default;
+}
+.special {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.profile {
+  width: 10%;
+  height: 80%;
+  cursor: pointer;
+}
+
+
+.student,
+.host {
+  z-index: 1;
+
+  width: 10%;
+  position: absolute;
+  top: 10.5%;
+  right: 0;
+
+  background-color: #42484d;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+
+  /* quick fix to the padding happening due to user-agent stylesheets of every browser
+  padding-left: -40px; 
+  no need as greater fix at the start of css file
+  */
+}
+.student {
+  left: 45%;
+}
+.host {
+  left: 60%;
+}
+.hamBtn,
+.closeBtn {
+  display: none;
+}
+
+/* Mobile View  */
+@media screen and (max-width: 800px) {
+  .hamBtn {
+    display: block;
+  }
+  .hamBtn button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .closeBtn {
+    align-self: flex-start;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+  }
+  .closeBtn:hover {
+    color: #ae2012;
+  }
+  .items {
+    display: none;
+  }
+  .extra {
+    width: 100%;
+    margin-left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    gap: 5px;
+    /* quick fix to the padding happening due to user-agent stylesheets of every browser
+  padding-left: -40px; 
+  no need as greater fix at the start of css file
+  */
+  }
+
+  .student {
+    width: 20%;
+    top: 7%;
+    left: 5%;
+  }
+  .host {
+    width: 20%;
+    top: 12%;
+    left: 5%;
+  }
+
+  .logo {
+    width: 10%;
+  }
+}

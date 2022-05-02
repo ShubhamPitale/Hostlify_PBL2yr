@@ -1,0 +1,207 @@
+.hostFoodPage {
+  /* width: 100vw;
+  height: 100vh; */
+}
+.formCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.foodForm {
+  width: 80vw;
+  background-color: #f7b267;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.headings {
+  align-self: flex-start;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+.headings h2 {
+  align-self: flex-start;
+  color: #f25c54;
+  font-weight: bold;
+}
+.headings p {
+  width: 100%;
+}
+.headings img {
+  width: 40%;
+}
+.control {
+  width: 100%;
+  margin: 1.5rem 0;
+  align-self: flex-start;
+
+  text-align: left;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border-top: 2px solid #f25c54;
+  padding-top: 10px;
+}
+.control label {
+  /* color: white; */
+  font-weight: bold;
+}
+
+.actions button {
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1rem;
+  background-color: #f25c54;
+  opacity: 0.8;
+}
+.actions button:hover {
+  opacity: 1;
+  box-shadow: 3px 3px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.general_input {
+  width: 20%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+
+  outline: 2px solid #f79d65;
+  outline-offset: 2px;
+}
+.email_input {
+  width: 75%;
+  padding: 5px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.wide_input {
+  margin-top: 5px;
+  width: 70%;
+}
+.wider_input {
+  width: 94%;
+}
+
+.inputPlace,
+.inputSpace,
+.inputGuest,
+.inputTitle,
+.inputPrice,
+.inputMobile,
+.inputEmail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.justtoflex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.small_address {
+  display: flex;
+  flex-direction: column;
+}
+.textarea {
+  width: 80%;
+  outline: 2px solid #f79d65;
+  outline-offset: 5px;
+}
+.textarea:focus {
+  background-color: #fbf8cc;
+}
+/* ******************
+MOBILE VIEW
+********************* */
+@media screen and (max-width: 800px) {
+  .heading {
+    width: 50%;
+  }
+  .headings p {
+    font-size: 10px;
+  }
+  .headings img {
+    width: 50%;
+  }
+  .general_input {
+    width: 30%;
+    padding: 2px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    outline: 1px solid #f79d65;
+    outline-offset: 2px;
+  }
+  .wide_input {
+    margin-top: 5px;
+    width: 50%;
+  }
+  .wider_input {
+    width: 100%;
+  }
+  .justtoflex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .mobChange {
+    width: 70%;
+    margin-bottom: 10px;
+  }
+
+  .textarea {
+    width: 100%;
+  }
+  .general_input,
+  .wide_input,
+  .wider_input,
+  .email_input {
+    padding-left: 10px;
+  }
+  .control select {
+    font-size: 12px;
+  }
+}
+
+.uploadBtn {
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 0.8rem;
+  background-color: #f25c54;
+  opacity: 0.8;
+}
+.uploadBtn:hover {
+  opacity: 1;
+  box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.progressBarContainer {
+  width: 100%;
+  height: 15px;
+  margin-top: 20px;
+  background-color: #e9ecef;
+}
+.progress__bar {
+  height: 100%;
+  background-color: #20bf55;
+}
