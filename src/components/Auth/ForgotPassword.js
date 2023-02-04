@@ -1,7 +1,7 @@
-import { Fragment } from "react";
-import classes from "./ForgotPassword.module.css";
-import { Link } from "react-router-dom";
-import { useRef } from "react";
+import { Fragment } from 'react';
+import classes from './ForgotPassword.module.css';
+import { Link } from 'react-router-dom';
+import { useRef } from 'react';
 
 const ForgotPassword = () => {
   const emailInput = useRef();
@@ -11,15 +11,15 @@ const ForgotPassword = () => {
     const emailInputValue = emailInput.current.value;
 
     let url =
-      "https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyCQyBHMDKHugAxAiBY63up6mW8_x1QO9C4";
+      'https://identitytoolkit.googleapis.com/v1/accounts:sendOobCode?key=AIzaSyCQyBHMDKHugAxAiBY63up6mW8_x1QO9C4';
     fetch(url, {
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
         email: emailInputValue,
-        requestType: "PASSWORD_RESET",
+        requestType: 'PASSWORD_RESET',
       }),
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
     })
       .then((res) => {
@@ -27,10 +27,10 @@ const ForgotPassword = () => {
         return res.json();
       })
       .then((data) => {
-        alert("Password reset link sent successfully to email id");
+        alert('Password reset link sent successfully to email id');
       })
       .catch((err) => {
-        let errMsg = "Password Reset Failed!";
+        let errMsg = 'Password Reset Failed!';
         alert(errMsg);
       });
   };
